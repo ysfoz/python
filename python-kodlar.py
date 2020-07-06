@@ -46,17 +46,3 @@ elif(x != ad) and (y == sifre):
     print('yanlis kullanici adi girdiniz')
 else:
     print('yanlis kullanici adi ve sifre girdiniz')  
-
-
-#  sayi bulma oyunu
-
-    liste = [1,2,3,4,5,6,7,8,9,10]
-x = (random.choice(liste))
-print(x)
-while True :
-    y = int(input('1 den 10 a kadar 1 sayi giriniz'))
-    if x != y:
-        print('tekrar dene')
-    elif x == y:
-        print('tebrikler')
-        break
