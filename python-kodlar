@@ -1,0 +1,33 @@
+# bu hesap makinasi programi- if kullanimi icin yapildi.
+
+print("""*****************************
+
+Hesap Makinesi Programi
+
+Islemeler:
+1-Toplama islemi
+
+2-cikarma islemi
+
+3-carpma islem
+
+4-bolme islemi
+
+*******************************
+
+""")
+
+x = int(input('birinci sayi'))
+y = int(input('ikinci sayi'))
+islem = input('islemi giriniz')
+if islem == "1" :
+    print(f'{x} ve {y} nin toplami {x + y} dir')
+elif islem == "2" :
+    print(f'{x} ve {y} nin farki {x - y} dir')
+elif islem == "3" :
+    print(f'{x} ve {y} nin carpimi {x * y} dir')
+elif islem == "4" :
+    print(f'{x} ve {y} nin bolumu {x / y} dir')
+    
+    
+    
