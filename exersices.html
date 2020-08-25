@@ -1,0 +1,169 @@
+<!DOCTYPE html> <!--zorunlu degil,sadece tanimlama icin-->
+<html>
+    <head><!--html head ve body den olusur, sanirim bu kisim daha cok CSS te kullanilacak-->
+        <title><!--olusturulan pencerenin ismi-->
+            Exercises
+        </title>
+    </head>
+
+    <body><!--tum veriler body kismina girilir-->
+        <h1>My Portfolio </h1><!--1 den 6 ya kadar 6 tane h yani baslik var, h1 arama motorlarinda ilk bulunan veri, o yuzden sadecce 1 defa kullanilir-->
+        <!--img ile bir resim eklenir, src link vermek icin alt resmin acilmadigi durumlarda gosterilecek metin icin, width ve height buyukluk icin, border da resmin cercevesi icin kullanilir.-->
+        <img src="https://e-channelnews.com/wp-content/uploads/2018/05/SecurityHacker2.png" alt="There is something wrong" width="%15" height="%10"/>
+
+        <h2>About Me</h2>
+        <p><!-- b - strong yada em -i ayni seyi yapar ama em ve strong arama motorlarinda bulunan sonuclari verir  -->
+        Ich bin <big>Yusuf Oz</big> und komme aus der <ins>Turkei.</ins>Ich war <sub>zwar</sub> vor 5 Jahre <strong>Beamter</strong>
+        aber <mark>jetzt</mark> bin ich <i>arbeitlos.</i><br/> ich gloube es, dass alles gut sein wird.
+        </p>
+
+        <h2>My Skills</h2>
+            
+        <ul><!--unordered list yani nokta yada kare ile gosteriliyor.-->
+            <li>HTML-CSS</li>
+                <ul >
+                    <li>html 5</li>
+                    <li>css basics</li>
+                </ul>
+
+            <li>JavaScript</li>
+                <ol type="A">
+                    <li>basics</li>
+                    <li>intermadiate</li>
+                </ol><!--secilenn karaktere gore siralar. rakam alfabe yada roma rakami secilebilir-->
+            <li>Python</li>
+                <ol type="I">
+                    <li>basics</li>
+                    <li>plus</li>
+                </ol>
+
+        </ul>
+
+
+        <h2>Project</h2>
+            <ol>
+                <!--a ile link olusturulur, href e bu link girilir, target default olarak ayn sayfada acacak sekilde _blank olursa yeni sekmede acar,-->
+                <li><a href="https://clarusway.com" target="_blank">Clarusway</a></li>
+
+                <br/>
+
+                <li><a href="https://clarusway.com"><img src="https://clarusway.com/wp-content/uploads/2020/06/clarusway_logo.png" alt="pic" width="%30" height="%20" border="4" /></a></li>
+
+            </ol>
+
+        <h2>My Schedule</h2>
+        <!--tablo lar table tag i ile olusturulur. border a girilen sayiya gore tablonun kalinligi ayarlanir.-->
+        <table border="4">
+            <tr>
+                <th>DAY</th>
+                <th>Hours</th>
+                <th>Lesson</th>
+            </tr>
+
+            <tr>
+                <td bgcolor="red">Montag</td>
+                <td>12:00</td>
+                <!--rowspan sutunlarida bulnan husceleeri cowspan soldan baslayarak satirdaki hecreleri birlestirir.-->
+                <td rowspan="2" align="center">HTML</td>
+            </tr>
+
+            <tr>
+                <td>Tuesday</td>
+                <td>13:00</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td colspan="2" align="center">----</td>
+                
+            </tr>
+
+            <tr>
+                <td>Thursday</td>
+                <td rowspan="2" align="right">12:00</td>
+                <td rowspan="2" align="left">CSS</td>
+            </tr>
+
+            <tr>
+                <td>Fritag</td>
+            </tr>
+
+        </table>
+
+        <form action="https:clarusway.com">
+            <!--kullanicidan veri almak icin kullaniliyor.-->
+            <h2>Welcome</h2>
+            Username:
+            <!--type ile veri tipi belirlenir mesala burada alfabetik degerler kabul edilir-->
+            <input type="text" name='Username'><br/>
+            password
+            <input type="password" name="pass"> <!--bu sekilde girilen degerler yildiz seklinde gosterilir-->
+            <br/>
+            <!--secenekli veriler almak icin kullanilir.-->
+            <input type="radio" name='gender' value="male"  checked> Male
+            <input type="radio" name='gender' value="famele"  checked> Famele<br/>
+            <!--bu sekilde kullanicinin bir kac secenek secebilecegi bir tablo olusturulmus olur..-->
+            <!--radio ile sadece bir tane secebilirken bu sekilde istenilen kadar secilebilir.-->
+            <p>Which days are you busy.</p>
+            <input type="checkbox" name="days" value="monday"> Monday<br>
+            <input type="checkbox" name="days" value="tuesday">Tuesday<br>
+            <input type="checkbox" name="days" value="wednesday"> Wednesday<br>
+            <input type="checkbox" name="days" value="thursday"> Thursday<br>
+            <input type="checkbox" name="days" value="friday"> Friday<br>
+
+            Username:<!--girilen bir degeri submit etmek yani onaylaak icin kullanilir.-->
+            <input type="text" name="dogrumu"><br/>
+            <input type="submit" value="Submit"><br/>
+
+            <p>How old are you?</p>
+            <!--rakamsal  degerler icin kullanilir.-->
+            Age: <input type="number" name="age"> <br/> <br/>
+            <!--girilen tum verileri restlemek icin bir reset butonu olusturur..-->
+            <input type="reset" value="reset">
+            <!--<input type=" bu alana girilen ture gore kullanicidan bir cok veri alinabilir.vs te type yazildiginde secenekler zaten aciliyor.".-->
+        </form>
+
+        <!--kullanicidan daha kapsamli veriler almak gerektiginde textarea attirubute kullanilir.input attirubute kapatilmazken bu kapatilir.-->
+<form action="http://www.clarusway.com/action_page.php"> 
+        <p>Please, enter your comments.</p>
+        <textarea name="comments" rows="10" cols="60">Enter your comments here.</textarea>
+      </form>
+<!--input alip rodio tipi secilerek kullanician secenek secmesi istenilebilir. ama seceneklerin cok oldugu durumlarda slect kullanilir.-->
+      <form action="http://www.clarusway.com/action_page.php"> 
+        <h2>Welcome Clarusway</h2>
+        <p>Please select a lesson.</p>
+        <select name="lessons">
+           <option value="java">Java</option>
+           <option value="html">HTML</option>
+           <option value="css" selected>CSS</option>
+           <option value="js">Javascript</option>
+           <option value="git">Git</option>
+           <option value="maven">Maven</option>
+       </select>
+     </form>
+
+     <form action="http://www.clarusway.com/action_page.php"> 
+         <!--yine birden fazla secenek var, ama kullanici secmek yerine yazar. ve eslesen degerlerden birini secer..-->
+        <h2>Welcome Clarusway</h2>
+        <p>Please select a lesson.</p>
+        <input type="text" list="lessons" name="lesson">
+        <datalist id="lessons">
+            <option value="java">
+            <option value="html">
+            <option value="css">
+            <option value="js">
+            <option value="git">
+            <option value="maven">
+        </datalist>
+      </form>
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
